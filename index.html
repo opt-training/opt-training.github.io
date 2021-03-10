@@ -1,0 +1,325 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- ======================================================================= -->
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<style type="text/css">
+  body {
+    font-family: "Titillium Web","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight:300;
+    font-size:18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  h1 {
+    font-weight:300;
+    max-width: 100%;
+  }
+
+  div {
+    max-width: 95%;
+    margin:auto;
+    padding: 10px;
+  }
+
+  .table-like {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .disclaimerbox {
+    background-color: #eee;
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+    padding: 20px;
+  }
+
+  video.header-vid {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  table {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+
+  img.header-img {
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  img.rounded {
+    border: 1px solid #eeeeee;
+    border-radius: 10px ;
+    -moz-border-radius: 10px ;
+    -webkit-border-radius: 10px ;
+  }
+
+  a:link,a:visited
+  {
+    color: #1367a7;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #208799;
+  }
+
+  td.dl-link {
+    height: 160px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+            15px 15px 0 0px #fff, /* The fourth layer */
+            15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+            20px 20px 0 0px #fff, /* The fifth layer */
+            20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+            25px 25px 0 0px #fff, /* The fifth layer */
+            25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+    margin-left: 10px;
+    margin-right: 45px;
+  }
+
+
+  .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+    box-shadow:
+            0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+            5px 5px 0 0px #fff, /* The second layer */
+            5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+            10px 10px 0 0px #fff, /* The third layer */
+            10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .vert-cent {
+    position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  hr
+  {
+    border: 0;
+    height: 1px;
+    max-width: 1100px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+  #authors td {
+    padding-bottom:5px;
+    padding-top:30px;
+  }
+</style>
+<!-- ======================================================================= -->
+
+<!-- Start : Google Analytics Code -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64069893-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-64069893-4');
+</script> -->
+<!-- End : Google Analytics Code -->
+
+<script type="text/javascript" src="resources/hidebib.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+<div max-width=100%>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" type="image/png" href="images/ri_logo.png">
+  <title>Orthogonal Over-parametrized Training</title>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="canonical" href="http://opt-training.github.io" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+
+</head>
+
+<body>
+      <br>
+      <center><span style="font-size:44px;font-weight:bold;">Orthogonal Over-parametrized Training</span></center><br/>
+      <div class="table-like" style="justify-content:space-evenly;max-width:900px;margin:auto;">
+          <div><center><span style="font-size:22px"><a href="http://wyliu.com" target="_blank">Weiyang Liu*</a></span></center>
+          <center><span style="font-size:18px">University of Cambridge</span></center>
+          </div>
+
+          <div><center><span style="font-size:22px"><a href="https://rmlin.github.io/" target="_blank">Rongmei Lin*</a></span></center>
+          <center><span style="font-size:18px">Emory University</span></center>
+          </div>
+
+          <div><center><span style="font-size:22px"><a href="http://itszhen.com" target="_blank">Zhen Liu</a></span></center>
+          <center><span style="font-size:18px">Mila, University of Montreal</span></center>
+          </div>
+
+          <div><center><span style="font-size:22px"><a href="https://" target="_blank">James Rehg</a></span></center>
+          <center><span style="font-size:18px">Georgia Tech</span></center>
+          </div>
+
+          <div><center><span style="font-size:22px"><a href="https://" target="_blank">Liam Paull</a></span></center>
+            <center><span style="font-size:18px">Mila, University of Montreal</span></center>
+          </div>
+
+          <div><center><span style="font-size:22px"><a href="https://" target="_blank">Li Xiong</a></span></center>
+            <center><span style="font-size:18px">Emory University</span></center>
+          </div>
+
+          <div><center><span style="font-size:22px"><a href="https://" target="_blank">Le Song</a></span></center>
+            <center><span style="font-size:18px">Georgia Tech</span></center>
+          </div>
+
+          <div><center><span style="font-size:22px"><a href="https://" target="_blank">Adrian Weller</a></span></center>
+            <center><span style="font-size:18px">University of Cambridge</span></center>
+          </div>
+      </div>
+      <!-- <table align=center width=600px style="padding-top:0px;padding-bottom:0px">
+          <tr>
+            <td align=center width=600px><center><span style="font-size:15px">* equal contribution</span></center></td>
+          <tr/>
+      </table> -->
+      <center><span style="font-size:22px;"><a href=''>CVPR 2021, <b> Oral Presentation</b></a></span></center><br/>
+
+      <div class="table-like" style="justify-content:space-evenly;max-width:700px;margin:auto;padding:5px">
+        <td align=center width=100px><center><span style="font-size:22px"><a href="https://arxiv.org/abs/2004.04690">[ArXiv]</a></span></center></td>
+        <td align=center width=100px><center><span style="font-size:22px"><a href="">[Slides]</a></span></center></td>
+        <td align=center width=100px><center><span style="font-size:22px"><a href="">[Poster]</a></span></center></td>
+        <td align=center width=100px><center><span style="font-size:22px"><a href=''>[GitHub Code]</a></span></center></td>
+      </div><br/>
+
+      <center>
+      <iframe width="768" height="432" max-width="100%" src="" frameborder="3" allowfullscreen></iframe></center>
+      <br>
+
+      <div style="width:800px; margin:0 auto; text-align=right;">
+
+    </div>
+      <br><hr>
+
+      <center><h1></h1></center>
+      <div style="width:800px; margin:0 auto; text-align=right">
+      </div>
+        <center><a href=""><img src = "" height="200px"></img></a><br></center>
+      <hr>
+
+
+      <!-- <center><h1>Overview of the Algorithm</h1></center><br/>
+      <center><a href="resources/method.png"><img src = "resources/method.png" width="800px"></img></a><br></center>
+      <br/><hr> -->
+
+
+            <center id="sourceCode"><h1>Source Code</h1></center>
+            <div style="width:750px; margin:0 auto; text-align=right">
+
+            </div>
+            <table align=center width=600px>
+              <tr>
+                <!-- <p style="margin-top:4px;"></p> -->
+                <td width=600px align=center>
+                  <center><span style="font-size:28px"><a href=''>[GitHub]</a></span></center>
+                </td>
+              </tr>
+            </table>
+            <br><hr>
+
+              <center><h1>Paper and Bibtex</h1></center>
+              <table align=center width=850px>
+              <tr>
+              <!-- <td width="30%" align=left>
+              <a href="https://arxiv.org/abs/2004.04690"><img style="height:150px" src="resources/thumbnail.png"/></a>
+              <center>
+              
+              </center>
+              </td> -->
+              <!-- <td width="6%" align=center>
+              </td> -->
+              <td width="100%" align=left>
+              <p style="text-align:left;"><b><span style="font-size:20pt">Citation</span></b><br/><span style="font-size:6px;">&nbsp;<br/></span> <span style="font-size:15pt">Weiyang Liu, Rongmei Lin, Zhen Liu, James Rehg, Liam Paull, Li Xiong, Le Song, Adrian Weller.</b> CVPR 2021.</span></p>
+
+              </td>
+              </tr>
+
+              <tr>
+              <td width="100%" align=left>
+              <span style="font-size:20pt"><a href="https://arxiv.org/abs/2004.04690">[ArXiv]</a>
+              <span style="font-size:20pt"><a shape="rect" href="javascript:togglebib('opt2021_bib')" class="togglebib">[Bibtex]</a></span>
+              </td>
+              </tr>
+
+
+              <tr>
+              <!-- <td width="30%" align=left>
+              </td>
+              <td width="6%" align=center>
+              </td> -->
+              <td width="100%" align=left>
+                <div class="paper" id="opt2021_bib">
+<pre xml:space="preserve">
+@InProceedings{Liu2021OPT,
+    title={Orthogonal Over-Parameterized Training},
+    author={Liu, Weiyang and Lin, Rongmei and Liu, Zhen and Rehg, James M. and Paull, Liam 
+        and Xiong, Li and Song, Le and Weller, Adrian},
+    booktitle={CVPR},
+    year={2021}}
+}</pre>
+                </div>
+                </td>
+                </tr>
+            </table>
+          <br><hr>
+      </table>
+
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+</div>
+<!-- <table align=center width=800px>
+  <tr><td width=800px><left>
+  <center><h1>Acknowledgements</h1></center>
+
+</left></td></tr>
+</table> -->
+
+<br><br>
+</body>
+</html>
